@@ -24,7 +24,7 @@
 
 int main(int argc, string argv[])
 {
-    // TODO: comment me
+    // require 2 or 3 command line arguments
     if (argc != 2 && argc != 3)
     {
         printf("Usage: generate n [s]\n");
