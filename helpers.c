@@ -25,6 +25,7 @@ bool search(int value, int values[], int n)
             return true;
         }
     }
+    // return false if value not found in values 
     return false;
 }
 
