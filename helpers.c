@@ -8,7 +8,7 @@
  */
        
 #include <cs50.h>
-
+#include <stdio.h>
 #include "helpers.h"
 
 /**
@@ -35,5 +35,19 @@ bool search(int value, int values[], int n)
 void sort(int values[], int n)
 {
     // TODO: implement an O(n^2) sorting algorithm
+    // bubble sort data
+    for (int i = 1; i < n; i++)
+    {
+        for (int j = 0; j < n - 1; j++)
+        {
+            if (values[j] > values[j + 1])
+            {
+                int temp = values[j];
+                values[j] = values[j + 1];
+                values[j + 1] = temp;
+            }
+        }
+    }
+    
     return;
 }
