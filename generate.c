@@ -34,7 +34,8 @@ int main(int argc, string argv[])
     // cast command line argument 1 as an int
     int n = atoi(argv[1]);
 
-    // TODO: comment me
+
+    // if command line argument 2 supplied, use. else, don't
     if (argc == 3)
     {
         srand48((long int) atoi(argv[2]));
