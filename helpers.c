@@ -17,15 +17,29 @@
 bool search(int value, int values[], int n)
 {
     // TODO: implement a searching algorithm
-    // check if value is in values
-    for(int i = 0; i < n; i++)
+    
+    // binary search algorithm
+    int first = 0;
+    int last = n - 1;
+    int middle = (first + last) / 2;
+    
+    while (first <= last) 
     {
-        if (values[i] == value)
+        if (values[middle] < value)
+        {
+            first = middle + 1;
+        }
+        else if (values[middle] == value)
         {
             return true;
         }
+        else
+        {
+            last = middle - 1;
+        }
+        
+        middle = (first + last) / 2;
     }
-    // return false if value not found in values 
     return false;
 }
 
