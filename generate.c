@@ -31,7 +31,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    // TODO: comment me
+    // cast command line argument 1 as an int
     int n = atoi(argv[1]);
 
     // TODO: comment me
