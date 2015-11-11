@@ -17,6 +17,15 @@
 bool search(int value, int values[], int n)
 {
     // TODO: implement a searching algorithm
+    // check if value is in values
+    for(int i = 0; i < n; i++)
+    {
+        if(values[i] == value)
+        {
+            return true;
+        }
+    }
+    // return false if value not found in values 
     return false;
 }
 
