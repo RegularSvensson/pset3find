@@ -5,6 +5,8 @@
  * Problem Set 3
  *
  * Helper functions for Problem Set 3.
+ *
+ * v1. check50 :) style50 :)
  */
        
 #include <cs50.h>
