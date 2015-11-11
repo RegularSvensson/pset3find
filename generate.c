@@ -24,17 +24,18 @@
 
 int main(int argc, string argv[])
 {
-    // TODO: comment me
+    // require 2 or 3 command line arguments
     if (argc != 2 && argc != 3)
     {
         printf("Usage: generate n [s]\n");
         return 1;
     }
 
-    // TODO: comment me
+    // cast command line argument 1 as an int
     int n = atoi(argv[1]);
 
-    // TODO: comment me
+
+    // if command line argument 2 supplied, use. else, don't
     if (argc == 3)
     {
         srand48((long int) atoi(argv[2]));
@@ -44,7 +45,7 @@ int main(int argc, string argv[])
         srand48((long int) time(NULL));
     }
 
-    // TODO: comment me
+    // print generated random numbers
     for (int i = 0; i < n; i++)
     {
         printf("%i\n", (int) (drand48() * LIMIT));
